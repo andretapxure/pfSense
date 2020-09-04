@@ -16,6 +16,6 @@ backupdir=/backup/solid/pfsense
 
 curl -Ss --insecure --cookie /tmp/$hostname-cookies.txt --cookie-jar /tmp/$hostname-cookies.txt --data "download=download&donotbackuprrd=yes&__csrf_magic=$csrf2" https://$hostname/diag_backup.php > $backupdir/$backupfile;
 
-grep --silent '^<?xml ' $backupfile || echo "Downloaded file is not XML; is probably broken."
+grep --silent '^<?xml ' $backupdir/$backupfile || echo "Downloaded file is not XML; is probably broken."
 
 rm /tmp/$hostname-cookies.txt;
