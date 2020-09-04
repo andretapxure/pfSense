@@ -1,4 +1,6 @@
 #!/bin/bash
+#This script is the actual backup script. It can be called standalone passing the four parameters bellow. The original script is https://github.com/mintsoft/PFSense-CURL-Backup
+
 hostname=$1;
 username=$2;
 password=$3;
