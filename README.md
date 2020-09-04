@@ -1,1 +1,1 @@
-# pfSense# pfSense
+This project hosts some Helper scripts to help us to manage pfSense Firewalls without Netgate support. The first one is the pfbackup.sh that curl's in to the firewall web interface and grab the last backup.
